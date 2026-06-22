@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cãopanhia | Premium Canine Care</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed": "#ede9fe",
+                      "outline-variant": "#d0d2dc",
+                      "on-tertiary-fixed": "#2e1065",
+                      "tertiary-fixed-dim": "#c4b5fd",
+                      "tertiary": "#7c3aed",
+                      "secondary-fixed": "#d8dae6",
+                      "on-secondary-container": "#585a68",
+                      "on-primary-fixed-variant": "#4338ca",
+                      "surface": "#e8eaf0",
+                      "on-primary-fixed": "#1e1b4b",
+                      "inverse-surface": "#2e3040",
+                      "primary": "#6366f1",
+                      "secondary": "#6c6e7e",
+                      "surface-variant": "#dcdee4",
+                      "on-primary": "#ffffff",
+                      "surface-container-lowest": "#f0f2f8",
+                      "primary-container": "#818cf8",
+                      "background": "#e8eaf0",
+                      "outline": "#8a8c9a",
+                      "on-secondary": "#ffffff",
+                      "tertiary-container": "#a78bfa",
+                      "surface-dim": "#d4d6dc",
+                      "surface-container-highest": "#d6d8de",
+                      "surface-container-high": "#dcdee4",
+                      "on-primary-container": "#e0e2ff",
+                      "secondary-fixed-dim": "#b8baca",
+                      "surface-container-low": "#e5e7ed",
+                      "on-secondary-fixed": "#1a1b26",
+                      "primary-fixed-dim": "#a5b4fc",
+                      "on-surface-variant": "#585a68",
+                      "error": "#dc2626",
+                      "inverse-on-surface": "#e8eaf0",
+                      "secondary-container": "#d8dae6",
+                      "on-tertiary-container": "#3b1f63",
+                      "on-background": "#2e3040",
+                      "on-error": "#ffffff",
+                      "inverse-primary": "#a5b4fc",
+                      "on-secondary-fixed-variant": "#404252",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-fixed-variant": "#5b21b6",
+                      "surface-tint": "#6366f1",
+                      "surface-bright": "#edeef4",
+                      "primary-fixed": "#e0e2ff",
+                      "on-surface": "#2e3040",
+                      "surface-container": "#e2e4ea",
+                      "on-error-container": "#991b1b",
+                      "error-container": "#fee2e2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.5rem",
+                      "lg": "1rem",
+                      "xl": "1.5rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Plus Jakarta Sans"],
+                      "body": ["Plus Jakarta Sans"],
+                      "label": ["Plus Jakarta Sans"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .neomorph-raised {
+            background: #0f1025;
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.4), -4px -4px 10px rgba(255,255,255,0.02);
+        }
+        .neomorph-inset {
+            background: #080918;
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.5), inset -2px -2px 6px rgba(255,255,255,0.02);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-btn {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="selection:bg-indigo-500/30">
+<!-- TopNavBar -->
+<nav class="bg-slate-950/80 backdrop-blur-md docked full-width top-0 sticky border-b border-white/5 shadow-[6px_6px_12px_rgba(0,0,0,0.4),-6px_-6px_12px_rgba(255,255,255,0.02)] z-50">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="text-2xl font-semibold tracking-tight text-white font-headline">Cãopanhia</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-indigo-400 border-b-2 border-indigo-500 pb-1 font-plus-jakarta text-sm font-medium" href="#">Services</a>
+<a class="text-slate-400 hover:text-white transition-colors font-plus-jakarta text-sm font-medium" href="#">Veterinarians</a>
+<a class="text-slate-400 hover:text-white transition-colors font-plus-jakarta text-sm font-medium" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="gradient-btn text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:opacity-90 active:scale-95 transition-all shadow-lg">
+                    Book Appointment
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative overflow-hidden pt-20 pb-32">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(99,102,241,0.15),transparent_50%)]"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-16">
+<div class="md:w-1/2 text-center md:text-left">
+<div class="inline-flex items-center space-x-2 bg-indigo-500/10 border border-indigo-500/20 rounded-full px-4 py-1 mb-6">
+<span class="material-symbols-outlined text-indigo-400 text-sm">stars</span>
+<span class="text-xs font-semibold text-indigo-300 uppercase tracking-widest">Premium Veterinary Care</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+                    Seu melhor amigo merece o melhor <span class="gradient-text">cuidado, sempre.</span>
+</h1>
+<p class="text-slate-400 text-lg md:text-xl mb-10 max-w-xl leading-relaxed">
+                    Medicina veterinária canina preventiva e emergência 24h. Cuidado premium com tecnologia de ponta e muito afeto.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+<button class="gradient-btn text-white px-10 py-5 rounded-2xl text-lg font-bold shadow-[0_20px_40px_-15px_rgba(79,70,229,0.5)] hover:-translate-y-1 transition-all duration-300">
+                        Agendar Consulta Agora
+                    </button>
+<button class="neomorph-raised text-white px-8 py-5 rounded-2xl text-lg font-semibold flex items-center justify-center gap-2 border border-white/5 hover:bg-white/10 transition-all">
+<span class="material-symbols-outlined">play_circle</span>
+                        Ver Clínica
+                    </button>
+</div>
+</div>
+<div class="md:w-1/2 relative">
+<div class="relative z-10 rounded-[2.5rem] overflow-hidden neomorph-raised p-2 border border-white/10">
+<img alt="Happy Dog" class="rounded-[2rem] w-full object-cover aspect-[4/5]" data-alt="Close-up of a happy Golden Retriever in a modern clinical setting with soft purple ambient lighting and professional equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMa7Ji759FFqQiq4YnhaZ9Jap3_82LT-JECoEP_ETgFrRwgSXZHWOhVM0VSC-Efh2PwBpD4XtpxB8lTcDzQR4AcP7bdGWR9bestRtmUoZuD6qcXZeFvoP4kTVM8EIWn3qcRbN-KN1g9u0ATo2Tn9QC8vvVFbhLQFDQygUx7zZrZGY8ivgFV_fK_7V5G9aLrgdib4KXzZFyR0pi7UL-6_7dIfMJ-e7sRYEGIQnmtMeVW9HbrW34TUyf0KlV2LH-hJXDT35XazlRfash"/>
+</div>
+<div class="absolute -bottom-8 -left-8 glass-panel p-6 rounded-2xl flex items-center gap-4 z-20">
+<div class="w-12 h-12 bg-indigo-500/20 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-indigo-400" data-weight="fill">medical_services</span>
+</div>
+<div>
+<p class="text-white font-bold">24/7</p>
+<p class="text-slate-400 text-xs">Atendimento Emergencial</p>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Ecossistema (Services Grid) -->
+<section class="py-24 bg-[#0a0b1e]">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Tudo o que seu cão precisa em um só lugar.</h2>
+<div class="h-1.5 w-24 bg-indigo-600 mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service 1 -->
+<div class="group relative neomorph-raised p-8 rounded-[2rem] border border-white/5 hover:border-indigo-500/30 transition-all duration-500">
+<div class="mb-6 w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-600/20 to-purple-600/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-indigo-400 text-4xl">stethoscope</span>
+</div>
+<h3 class="text-2xl font-bold text-white mb-4">Atendimento Clínico</h3>
+<p class="text-slate-400 leading-relaxed mb-6">Consultas preventivas, vacinação importada e check-ups completos para longevidade.</p>
+<a class="text-indigo-400 font-semibold flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                        Saiba mais <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<!-- Service 2 -->
+<div class="group relative neomorph-raised p-8 rounded-[2rem] border border-white/5 hover:border-indigo-500/30 transition-all duration-500">
+<div class="mb-6 w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-600/20 to-purple-600/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-indigo-400 text-4xl">magnification_small</span>
+</div>
+<h3 class="text-2xl font-bold text-white mb-4">Especialidades</h3>
+<p class="text-slate-400 leading-relaxed mb-6">Cardiologia, Oncologia, Dermatologia e Ortopedia com especialistas renomados.</p>
+<a class="text-indigo-400 font-semibold flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                        Saiba mais <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<!-- Service 3 -->
+<div class="group relative neomorph-raised p-8 rounded-[2rem] border border-white/5 hover:border-indigo-500/30 transition-all duration-500">
+<div class="mb-6 w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-600/20 to-purple-600/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-indigo-400 text-4xl">emergency_home</span>
+</div>
+<h3 class="text-2xl font-bold text-white mb-4">Hospital 24h</h3>
+<p class="text-slate-400 leading-relaxed mb-6">Estrutura completa para internação, cirurgias complexas e UTI canina equipada.</p>
+<a class="text-indigo-400 font-semibold flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                        Saiba mais <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Objection Breaking (CãoCover) -->
+<section class="py-24 bg-[#121212] relative">
+<div class="max-w-7xl mx-auto px-6">
+<div class="neomorph-inset p-12 md:p-20 rounded-[3rem] border border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-4xl md:text-5xl font-bold text-white mb-8">Por que confiar na <span class="gradient-text">Cãopanhia</span>?</h2>
+<ul class="space-y-8">
+<li class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-indigo-500/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-indigo-400">verified_user</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-white mb-2">Veterinários Especialistas</h4>
+<p class="text-slate-400">Corpo clínico formado nas melhores universidades, com foco exclusivo em caninos.</p>
+</div>
+</li>
+<li class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-indigo-500/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-indigo-400">precision_manufacturing</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-white mb-2">Estrutura de Ponta</h4>
+<p class="text-slate-400">Equipamentos de imagem e diagnóstico de última geração operando 24 horas.</p>
+</div>
+</li>
+<li class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-indigo-500/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-indigo-400">visibility</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-white mb-2">Transparência Total nos Exames</h4>
+<p class="text-slate-400">Acesso via app a todos os resultados, prontuário e imagens em tempo real.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-[3rem] overflow-hidden neomorph-raised p-4">
+<img alt="Tech Diagnostic" class="w-full h-full object-cover rounded-[2rem]" data-alt="Modern high-tech veterinary examination room with sleek metal tools and blue digital displays in a dark aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcSV94g03NtvzisSOGD1LlIceJBLnpUW1ahqfUgPWaV9aJGtm4MmtM53ANqyvFhCcdK_yENUm56qoJq9wBNlex2f45mAwQNpI5hKt-niBEvwTh0l1Vswzmo_rZVaqtrpl6lMybPlwr11-2eRKDk2hdDSm_srK8SpzflwBM6LSJN8XLT9UL5AFeJDJHIPLSTn_3TDZLdOlv8ziQl25BvH-okWAoM_D0hIoGolvvgJJEE3be-0vMAxTXyZxL4_zVqS-ucfXGrsZlQbx-"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline (Process) -->
+<section class="py-24">
+<div class="max-w-5xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-white">Como funciona nosso atendimento</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-indigo-500/10 -translate-y-1/2 z-0"></div>
+<div class="relative z-10 text-center">
+<div class="w-16 h-16 rounded-full bg-indigo-600 text-white font-bold text-2xl flex items-center justify-center mx-auto mb-6 shadow-xl shadow-indigo-500/20">1</div>
+<h4 class="text-xl font-bold text-white mb-3">Agendamento</h4>
+<p class="text-slate-400 text-sm">Reserva rápida pelo WhatsApp ou App com escolha de especialista.</p>
+</div>
+<div class="relative z-10 text-center">
+<div class="w-16 h-16 rounded-full bg-indigo-600 text-white font-bold text-2xl flex items-center justify-center mx-auto mb-6 shadow-xl shadow-indigo-500/20">2</div>
+<h4 class="text-xl font-bold text-white mb-3">Atendimento</h4>
+<p class="text-slate-400 text-sm">Consulta humanizada e técnica em ambiente planejado para o conforto do cão.</p>
+</div>
+<div class="relative z-10 text-center">
+<div class="w-16 h-16 rounded-full bg-indigo-600 text-white font-bold text-2xl flex items-center justify-center mx-auto mb-6 shadow-xl shadow-indigo-500/20">3</div>
+<h4 class="text-xl font-bold text-white mb-3">Acompanhamento</h4>
+<p class="text-slate-400 text-sm">Monitoramento pós-consulta e lembretes inteligentes de saúde.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof -->
+<section class="py-24 bg-[#050505]">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="neomorph-raised p-10 rounded-[2.5rem] border border-white/5 italic text-slate-300 relative">
+<span class="material-symbols-outlined text-indigo-500/30 text-8xl absolute -top-4 -left-4">format_quote</span>
+<p class="text-lg leading-relaxed relative z-10 mb-8">"O nível de tecnologia da Cãopanhia é surreal. Fizemos a cirurgia do Thor e pudemos acompanhar tudo pelo sistema. O cuidado pós-operatório foi o diferencial."</p>
+<div class="flex items-center gap-4">
+<img alt="Mariana" class="w-12 h-12 rounded-full object-cover" data-alt="Portrait of a smiling young woman with a warm and friendly expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpqPNNoVsk_QLtNv7zdNaT9x8Lf11oxCWHdV2GJyOVoYido_s1YNEC2VqmZud0sWL9VUZtBB0Tt99tPrtv721xMVgom0w6FQWCnQXaXNplXB0o6OJf3eHK2ZBXgtPM3ye23qqrGM_eiKLjAHWKgI4RlqJ1sY0V3hi-F4bnDL0wpoPCho74N_TCwGhGO_sUQVlOC_oZJmY_H39vNZ3t8vbuMorl_-UUNHkfJJWOpxGm8u2bk8GR_yI5NPWfroH7PkDQh_RPKVWDaM5O"/>
+<div>
+<p class="text-white font-bold not-italic">Mariana Santos</p>
+<p class="text-indigo-400 text-xs not-italic">Tutora do Thor (Golden)</p>
+</div>
+</div>
+</div>
+<div class="neomorph-raised p-10 rounded-[2.5rem] border border-white/5 italic text-slate-300 relative">
+<span class="material-symbols-outlined text-indigo-500/30 text-8xl absolute -top-4 -left-4">format_quote</span>
+<p class="text-lg leading-relaxed relative z-10 mb-8">"Estávamos desesperados com uma emergência às 3 da manhã. Fomos atendidos imediatamente. O Dr. Ricardo foi extremamente paciente e explicou cada passo."</p>
+<div class="flex items-center gap-4">
+<img alt="Carlos" class="w-12 h-12 rounded-full object-cover" data-alt="Close-up of a professional looking middle-aged man with a friendly smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB10uG0aApgHe91K9hpDcTbqCvXox2031wCBVcnantMqJD0OCW0bIhxZLiPVA3Qev2bRtMG-uFvIMmk3pFCXzeJr32PU2XjyJNt7kGn2FyRIfCEInFGq2dpMOMedYDueTuVnJ_WGUuKdJOIpZyvpOCst74rrZOvr-eKXvF00VDhXEbsTIfrPuXx-AHYHSgg_GDAYRVbA1uGCUUnXdhsjzpvedmmHw9EhRqnDlEexVartQonZEYozM8fU5PO33BPnQc8nulmPVCGOofW"/>
+<div>
+<p class="text-white font-bold not-italic">Carlos Mendes</p>
+<p class="text-indigo-400 text-xs not-italic">Tutor da Luna (Border Collie)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="py-24">
+<div class="max-w-3xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-white mb-12 text-center">Perguntas Frequentes</h2>
+<div class="space-y-4">
+<details class="group neomorph-inset rounded-2xl overflow-hidden border border-white/5">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+<span class="text-white font-semibold">Como funciona a emergência noturna?</span>
+<span class="material-symbols-outlined text-indigo-400 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-slate-400">
+                        Nossa equipe de plantão está pronta para receber casos críticos 24 horas por dia, 7 dias por semana, sem necessidade de agendamento prévio em casos de urgência.
+                    </div>
+</details>
+<details class="group neomorph-inset rounded-2xl overflow-hidden border border-white/5">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+<span class="text-white font-semibold">Quais as formas de pagamento disponíveis?</span>
+<span class="material-symbols-outlined text-indigo-400 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-slate-400">
+                        Aceitamos todos os cartões de crédito (parcelamento em até 10x sem juros), débito, PIX e convênios selecionados.
+                    </div>
+</details>
+<details class="group neomorph-inset rounded-2xl overflow-hidden border border-white/5">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+<span class="text-white font-semibold">Posso acompanhar meu cão durante a internação?</span>
+<span class="material-symbols-outlined text-indigo-400 group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-slate-400">
+                        Sim! Temos horários de visita flexíveis e oferecemos atualizações de vídeo duas vezes por dia para cães internados, para sua total tranquilidade.
+                    </div>
+</details>
+</div>
+</div>
+</section>
+<!-- Conversion Footer -->
+<footer class="bg-slate-950 full-width py-12 border-t border-white/5">
+<div class="w-full px-8 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 max-w-7xl mx-auto">
+<div class="text-center md:text-left">
+<div class="text-2xl font-bold text-white mb-4 font-headline">Cãopanhia</div>
+<h3 class="text-xl font-bold text-white mb-2">O cuidado que seu cãozinho não pode esperar.</h3>
+<p class="text-slate-500 max-w-md">Rua das Amizades Caninas, 123 - Jardim Europa, São Paulo</p>
+<div class="mt-4 flex gap-4 justify-center md:justify-start">
+<span class="material-symbols-outlined text-slate-400 hover:text-indigo-400 cursor-pointer transition-colors">social_leaderboard</span>
+<span class="material-symbols-outlined text-slate-400 hover:text-indigo-400 cursor-pointer transition-colors">photo_camera</span>
+<span class="material-symbols-outlined text-slate-400 hover:text-indigo-400 cursor-pointer transition-colors">share</span>
+</div>
+</div>
+<div class="flex flex-col items-center md:items-end gap-6">
+<button class="gradient-btn text-white px-10 py-4 rounded-full font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-xl">
+                    Agendar Agora
+                </button>
+<div class="flex gap-6">
+<a class="text-slate-400 hover:text-indigo-300 transition-colors font-plus-jakarta text-xs underline underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-slate-400 hover:text-indigo-300 transition-colors font-plus-jakarta text-xs underline underline-offset-4" href="#">Terms of Service</a>
+<a class="text-slate-400 hover:text-indigo-300 transition-colors font-plus-jakarta text-xs underline underline-offset-4" href="#">Emergency</a>
+</div>
+<p class="font-plus-jakarta text-xs text-slate-500">© 2024 Cãopanhia Premium Veterinary. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- FAB for Emergency -->
+<div class="fixed bottom-8 right-8 z-[60]">
+<button class="w-16 h-16 rounded-full bg-red-600 text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all animate-pulse">
+<span class="material-symbols-outlined text-3xl" data-weight="fill">emergency</span>
+</button>
+</div>
+</body></html>
